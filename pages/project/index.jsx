@@ -5,6 +5,7 @@ import Button from '../../components/Button'
 
 const bannerContent = (
   <>
+  {/* // TODO: Layouting project page and create dynamic page using markdown */}
     <h1>My <em>*purojekto*</em></h1>
     <p className='description mb-4'>personal project</p>
     <div className='flex gap-2'>

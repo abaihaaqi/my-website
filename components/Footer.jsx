@@ -1,10 +1,14 @@
+import Image from 'next/image'
 import { LinkedinLogo, Newspaper, PaperPlaneTilt, TwitterLogo } from "phosphor-react";
 import { footerLink } from './Footer.module.css'
+import versionControl from '../public/illustration/version-control.svg'
 
 export default function Footer() {
   return (
     <footer className="bg-card flex justify-center md:gap-10 py-4 font-thin">
-      <img className="hidden md:inline w-1/3" src="/illustration/version-control.svg" alt="Version control illustration" />
+      <figure className='hidden md:inline w-1/3'>
+        <Image src={versionControl} alt="Version control illustration" />
+      </figure>
       <div className="flex flex-col justify-center items-center md:items-start">
         <h3 className="tracking-widest">Get in touch</h3>
         <nav className="flex flex-col gap-3 py-2">

@@ -1,7 +1,9 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 import Button from './Button';
 import Navbar from './Navbar';
+import inTheOffice from '../public/illustration/in-the-office.svg'
 
 export default function Banner({ content, home }) {
   const router = useRouter()
@@ -22,7 +24,7 @@ export default function Banner({ content, home }) {
           <div className='flex items-center h-full gap-16 absolute top-0 inset-x-0 z-10'>
 
             <div className='hidden md:flex flex-col items-end w-1/2'>
-              <img className='w-[400px]' src={'/illustration/in-the-office.svg'} alt="unDraw Illustration" />
+              <Image width={400} src={inTheOffice} alt="unDraw Illustration" />
             </div>
 
             <div className='flex flex-col md:w-1/2 ml-8 md:ml-0'>

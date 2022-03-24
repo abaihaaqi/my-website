@@ -1,12 +1,16 @@
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 import Button from './Button';
+import wavePortal from '../public/design/wave-portal.png'
 
-export default function Card({ image = '/design/wave-portal.png', title = 'Wave Portal', desc = 'a wave portal app', link = 'wave-portal', linkName = 'Find out', rightText }) {
+export default function Card({ image = wavePortal, title = 'Wave Portal', desc = 'a wave portal app', link = 'wave-portal', linkName = 'Find out', rightText }) {
   const router = useRouter()
 
   return (
-      <div className={rightText ? 'card mb-3 p-2 md:grid grid-cols-3' : 'card mb-3 p-2'}>
-        <img className='rounded-lg col-span-2' src={image} alt={`${title} image`} />
+      <div className={rightText ? 'card mb-3 p-2 md:grid grid-cols-3' : 'card mb-3 p-2 w-full'}>
+        <figure className='rounded-lg overflow-hidden col-span-2'>
+          <Image layout='responsive' src={image} alt={`${title} image`} />
+        </figure>
         <div className='flex flex-col justify-between'>
           <div />
           <div className='pt-3 px-3'>
