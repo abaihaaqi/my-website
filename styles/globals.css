@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Noto+Sans&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -22,16 +22,56 @@
   }
 
   h1 {
-    @apply text-5xl font-bold
+    @apply text-2xl
   }
   h2 {
-    @apply text-3xl
+    @apply text-xl
   }
   h3 {
-    @apply text-xl
+    @apply text-lg
+  }
+  h4 {
+    @apply text-[1.5rem]
   }
 
   a {
     @apply text-link hover:underline
+  }
+
+  p {
+    @apply py-3
+  }
+
+  blockquote {
+    @apply card bg-action-secondary border-l-8 border-action-primary
+  }
+
+  ul {
+    @apply list-disc list-inside mb-2;
+  }
+  
+  ol {
+    @apply list-decimal list-inside mb-2;
+  }
+
+  hr {
+    @apply border-t border-black my-2
+  }
+}
+
+@layer components {
+  .description {
+    font-size: theme('fontSize.sm');
+    font-weight: theme('fontWeight.light');
+    font-family: theme('fontFamily.heading');
+  }
+
+  .card {
+    background-color: theme('colors.card');
+    border-radius: theme('borderRadius.lg');
+    padding-top: theme('spacing.2');
+    padding-bottom: theme('spacing.2');
+    padding-left: theme('spacing.3');
+    padding-right: theme('spacing.3');
   }
 }

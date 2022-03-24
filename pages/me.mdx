@@ -1,0 +1,39 @@
+import Layout from '../components/Layout'
+import Placeholder from '../components/Placeholder'
+
+export const bannerContent = (
+  <>
+    <h1>Aku</h1>
+    <p>'Me' in <a href="https://en.wikipedia.org/wiki/Indonesian_language" target="_blank" rel="noopener noreferrer">Bahasa Indonesia</a></p>
+  </> 
+)
+
+# About
+
+Hello, my name is Nizar Baihaqi and i'm a Frontend Web Developer.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quisquam illum optio sed! Atque deleniti soluta aut assumenda aperiam! Officia laudantium expedita eveniet consectetur at!
+
+<Placeholder width='900' />
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt possimus eos aut. Alias dolore reiciendis quia repellendus atque voluptas sed magnam dicta, recusandae vero fuga similique quas eos optio modi?
+
+> Try blockquote
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptas corrupti tempore consequatur quod illo.
+
+- Write the press release
+- Update the website
+- Contact the media
+
+1. Hehe
+2. Hehe
+3. Hehe
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus possimus a eaque facilis ab, esse vel! Minima ex modi aut?
+
+---
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt modi hic ea quos assumenda officia, aspernatur mollitia corporis unde earum voluptas voluptatibus minima ducimus sequi ab blanditiis aliquam quisquam tempora.
+
+export default ({ children }) => <Layout md bannerContent={bannerContent}>{children}</Layout>

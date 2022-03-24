@@ -1,0 +1,7 @@
+.primary {
+  @apply bg-action-primary text-action-secondary rounded-md py-1 px-2 hover:transform hover:scale-110 transition-all;
+}
+
+.secondary {
+  @apply hover:bg-action-primary text-black hover:text-action-secondary rounded-full p-1 transition-all;
+}
