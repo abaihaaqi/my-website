@@ -1,5 +1,9 @@
 import Image from 'next/image'
 
-export default function Placeholder({ height = 300, width = 300 }) {
-  return <Image src={`https://via.placeholder.com/${width}x${height}`} width={width} height={height} alt='Placeholder image' />
+export default function Placeholder({ height = 'h-[300px]' }) {
+  return (
+    <div className={`relative w-full ${height}`}>
+      <Image src={`https://via.placeholder.com/300`} alt='Placeholder image' layout='fill' objectFit='cover' />
+    </div>
+  )
 }

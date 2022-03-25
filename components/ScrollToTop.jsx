@@ -7,7 +7,7 @@ export default function ScrollToTop() {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 300) {
+      if (window.scrollY > 200) {
         setShowButton(true);
       } else {
         setShowButton(false);
@@ -25,9 +25,9 @@ export default function ScrollToTop() {
   return (
     <>
       {showButton && (
-        <div className='fixed bottom-6 right-6 z-50 transition-all'>
+        <div className='fixed bottom-6 right-6 z-50'>
           <Button click={scrollToTop} secondary>
-            <CaretCircleUp size={32} />
+            <CaretCircleUp size={40} />
           </Button>
         </div>
       )}

@@ -1,0 +1,19 @@
+.container {
+  @apply w-4/5 lg:w-full mx-auto my-20 lg:my-0 lg:relative lg:hover:cursor-zoom-in
+}
+
+.image {
+  @apply h-full lg:bg-white rounded-xl lg:shadow-lg p-3 z-0 transition-all flex justify-center items-center
+}
+
+.text {
+  @apply lg:absolute lg:bottom-0 lg:mb-10 lg:inset-x-0 lg:bg-primary lg:shadow-lg p-3 lg:overflow-hidden rounded-xl z-10 lg:text-center lg:opacity-0 transition-all
+}
+
+.container:hover .text {
+  @apply opacity-100 mb-0
+}
+
+.container:hover .image {
+  @apply lg:transform lg:-translate-y-10
+}
