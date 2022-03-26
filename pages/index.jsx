@@ -42,7 +42,7 @@ export default function Home() {
         <p className='description text-center hidden md:block'>Hover the card</p>
         <section>
           <h1 className='tracking-tight font-black text-center my-10'>Project</h1>
-          <div className='px-3 md:px-0 md:container md:max-w-3xl'>
+          <div className='px-3 lg:px-0 md:container md:max-w-3xl'>
             <Card image={wavePortal}>
               <h3>Wave Portal</h3>
               <p>A wave portal app</p>
