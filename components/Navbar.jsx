@@ -32,9 +32,9 @@ export default function Navbar() {
         </Link>
       </div>
       <div className="flex">
-        <Link href={'/design'}>
+        {/* <Link href={'/design'}>
           <a title="Design page" className={navbarLink}>{width > 500 ? 'Design' : <Palette size={32} />}</a>
-        </Link>
+        </Link> */}
         <Link href={'/project'}>
           <a title="Project page" className={navbarLink}>{width > 500 ? 'Project' : <Factory size={32} />}</a>
         </Link>

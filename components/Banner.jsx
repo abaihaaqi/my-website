@@ -40,11 +40,11 @@ export default function Banner({ content, home }) {
                 </p>
               </div>
               <div className='mt-10 flex gap-2'>
-                <Button click={() => router.push('/design')}>
+                {/* <Button click={() => router.push('/design')}>
                   Design
-                </Button>
+                </Button> */}
                 <Button click={() => router.push('/project')}>
-                  Project
+                  My Projects
                 </Button>
               </div>
             </div>
