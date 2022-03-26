@@ -20,7 +20,7 @@ export default function Navbar() {
   }, [])
 
   return (
-    <nav className='mx-auto flex justify-between items-center md:bg-accent lg:rounded-lg  md:max-w-4xl absolute inset-x-0 z-20'>
+    <nav className='mx-auto flex justify-between items-center md:bg-accent lg:rounded-lg  md:max-w-4xl absolute inset-x-0 z-30'>
       <div>
         <Link href="/">
           <a className={navbarLink}>
