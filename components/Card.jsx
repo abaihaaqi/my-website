@@ -1,15 +1,21 @@
-import Image from 'next/image';
+import Image from 'next/image'
+import style from './Card.module.css'
 
-export default function Card({ children, image, height = 'h-[200px]', container }) {
+export default function Card({ children, image }) {
   return (
-    <div className='bg-card rounded-xl overflow-hidden mb-3'>
-      <div className={`relative rounded-xl overflow-hidden w-full ${height} ${container}`}>
-        <Image src={image} alt='Placeholder image' layout='fill' objectFit='cover' />
-        <div className='hidden md:block absolute inset-0 bg-primary opacity-0 hover:opacity-70 transition-all'>
+    <div className='bg-card rounded-xl overflow-hidden mb-4'>
+      <div className={style.container}>
+        
+        <div className={style.image}>
+          <Image src={image} alt='Placeholder image' layout='responsive' />
+        </div>
+
+        <div className={style.text}>
           {children}
         </div>
+
       </div>
-      <div className='md:hidden p-3'>
+      <div className='xl:hidden p-3'>
         {children || 'Provide information here'}
       </div>
     </div>

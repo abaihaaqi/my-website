@@ -5,10 +5,12 @@ export default function InfoSection({ children, image }) {
   return (
     <div className={style.container}>
       <div className={style.image}>
-        <Image src={image} alt='Speed test illustration' />
+        <Image src={image} alt='' />
       </div>
-      <div className={style.text}>
-        {children}
+      <div className={style.textContainer}>
+        <div className={style.text}>
+          {children}
+        </div>
       </div>
     </div>
   )

@@ -21,28 +21,33 @@ export default function Home() {
       </Head>
       <article>
         {/* <Gallery title={'Design'} /> */}
-        <section className='lg:grid grid-cols-3 gap-10 max-w-5xl mx-auto lg:mx-10 xl:mx-auto lg:my-12'>
+        <section className='xl:grid grid-cols-3 gap-10 max-w-2xl xl:max-w-5xl mx-auto xl:my-32'>
 
           <InfoSection image={speedTest}>
             <h2 className='tracking-tighter italic font-light'>Fast</h2>
-            Lorem ipsum dolor sit amet.
+            <p>
+              Lorem ipsum dolor sit amet.
+            </p>
           </InfoSection>
 
           <InfoSection image={websiteBuilder}>
             <h2 className='tracking-widest font-light'>Flexible</h2>
-            Lorem, ipsum dolor.
+            <p>
+              Lorem, ipsum dolor.
+            </p>
           </InfoSection>
 
           <InfoSection image={innovative}>
             <h2 className='tracking-widest font-light'>Colorful</h2>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
           </InfoSection>
 
         </section>
-        <p className='description text-center hidden md:block'>Hover the card</p>
         <section>
           <h1 className='tracking-tight font-black text-center my-10'>Project</h1>
-          <div className='px-3 md:px-0 md:container md:max-w-3xl'>
+          <div className='px-3 lg:px-0 md:container md:max-w-3xl'>
             <Card image={wavePortal}>
               <h3>Wave Portal</h3>
               <p>A wave portal app</p>

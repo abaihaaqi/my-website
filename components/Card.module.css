@@ -1,0 +1,17 @@
+/* This only apllies in desktop screen */
+
+.container {
+  @apply relative w-full
+}
+
+.image {
+  @apply h-full z-0
+}
+
+.text {
+  @apply bg-primary bg-opacity-0 rounded-xl hidden xl:block p-3 absolute -bottom-40 inset-x-2 z-10 transition-all
+}
+
+.container:hover .text {
+  @apply bottom-2 bg-opacity-90
+}
