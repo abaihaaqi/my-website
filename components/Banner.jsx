@@ -3,7 +3,8 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import Button from './Button';
 import Navbar from './Navbar';
-import inTheOffice from '../public/illustration/in-the-office.svg'
+import Rangitikei from '../public/bg/Rangitikei.svg'
+import Ijay from '../public/img/ijay.jpg'
 
 export default function Banner({ content, home }) {
   const router = useRouter()
@@ -19,27 +20,27 @@ export default function Banner({ content, home }) {
         </div>
       )}
       {home && (
-        <div className='bg-card h-screen relative md:pt-7'>
+        <div className='h-screen relative md:pt-7'>
+          <div className='absolute inset-0 z-10'>
+            <Image src={Rangitikei} layout='fill' objectFit='cover' />
+          </div>
+          <div className='absolute inset-0 z-10 bg-black opacity-40' />
           <Navbar />
-          <div className='flex items-center h-full gap-16 absolute top-0 inset-x-0 z-10'>
-
-            <div className='hidden md:flex flex-col items-end w-1/2'>
-              <Image width={400} src={inTheOffice} alt="unDraw Illustration" />
-            </div>
-
-            <div className='flex flex-col md:w-1/2 ml-8 md:ml-0'>
+          <div className='absolute inset-0 z-20 flex flex-col justify-center max-w-3xl mx-auto px-3 xl:px-0'>
+            <div className='bg-card py-3 px-4 xl:p-10 rounded-xl' >
               <div>
-                <h1 className='tracking-tighter italic font-bold'>Fast,</h1>
-                <h1 className='tracking-widest font-semibold'>Flexible</h1>
-                <h3 className='tracking-widest font-light'>and look cool.</h3>
-                <p className='description'>
+                <h1 className='tracking-tighter italic font-bold pt-6 text-lg lg:text-2xl'>Building website</h1>
+                <h1 className='tracking-widest font-semibold text-lg'>doesn't have to be difficult</h1>
+                <div className='description flex items-center gap-2 mt-10'>
+                  <figure className='relative h-[30px] w-[30px] rounded-full overflow-hidden'>
+                    <Image src={Ijay} alt="Ijay potrait photo" layout='fill' objectFit='cover' />
+                  </figure>
                   <Link href='/me'>
                     <a>Nizar Baihaqi</a>
                   </Link>
-                  {' - Website Development'}
-                </p>
+                </div>
               </div>
-              <div className='mt-10 flex gap-2'>
+              <div className='mt-10 flex justify-end xl:justify-start gap-2'>
                 {/* <Button click={() => router.push('/design')}>
                   Design
                 </Button> */}
@@ -48,7 +49,6 @@ export default function Banner({ content, home }) {
                 </Button>
               </div>
             </div>
-
           </div>
         </div>
       )}
