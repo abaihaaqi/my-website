@@ -1,6 +1,16 @@
 import Layout from '../../components/Layout'
-import Card from '../../components/Card'
+import AllProjects from '../../components/AllProjects'
 import Button from '../../components/Button'
+import { getSortedPostsData } from '../../lib/posts'
+
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
+}
 
 const bannerContent = (
   <>
@@ -21,12 +31,10 @@ const bannerContent = (
   </>
 )
 
-export default function Projects() {
+export default function Projects({ allPostsData }) {
   return (
     <Layout bannerContent={bannerContent} project>
-      <article className='container max-w-4xl'>
-        {/** // Todo : use gallery with vertical scrolling */}
-      </article>
+      <AllProjects data={allPostsData} />
     </Layout>
   )
 }

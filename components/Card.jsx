@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import style from './Card.module.css'
+import wavePortal from '../public/design/wave-portal.png'
 
 export default function Card({ children, image }) {
   return (
@@ -7,7 +8,7 @@ export default function Card({ children, image }) {
       <div className={style.container}>
         
         <div className={style.image}>
-          <Image src={image} alt='Placeholder image' layout='responsive' />
+          <Image src={image || wavePortal} alt='Placeholder image' layout='responsive' />
         </div>
 
         <div className={style.text}>

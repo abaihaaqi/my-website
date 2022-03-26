@@ -1,16 +1,23 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import Button from '../components/Button'
-import Card from '../components/Card'
 // import Gallery from '../components/Gallery'
 import Layout from '../components/Layout'
-import wavePortal from '../public/design/wave-portal.png'
 import speedTest from '../public/illustration/speed-test.svg'
 import websiteBuilder from '../public/illustration/website-builder.svg'
 import innovative from '../public/illustration/innovative.svg'
 import InfoSection from '../components/InfoSection'
+import { getSortedPostsData } from '../lib/posts'
+import AllProjects from '../components/AllProjects'
 
-export default function Home() {
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
+}
+
+export default function Home({ allPostsData }) {
   return (
     <Layout home>
       {/* This is head for meta tags */}
@@ -46,20 +53,8 @@ export default function Home() {
 
         </section>
         <section>
-          <h1 className='tracking-tight font-black text-center my-10'>Project</h1>
-          <div className='px-3 lg:px-0 md:container md:max-w-3xl'>
-            <Card image={wavePortal}>
-              <h3>Wave Portal</h3>
-              <p>A wave portal app</p>
-              <div className='flex justify-end'>
-                <Button>
-                  Read more
-                </Button>
-              </div>
-            </Card>
-            <Card image={wavePortal} />
-            <Card image={wavePortal} />
-          </div>
+          <h1 className='tracking-tight font-black text-center my-10'>Projects</h1>
+          <AllProjects data={allPostsData} />
         </section>
       </article>
     </Layout>
