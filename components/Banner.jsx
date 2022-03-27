@@ -22,11 +22,7 @@ export default function Banner({ content, home }) {
       {home && (
         <div className='h-screen relative md:pt-7'>
           <div className='absolute inset-0 z-10'>
-<<<<<<< HEAD
             <Image src={Rangitikei} layout='fill' objectFit='cover' alt='' />
-=======
-            <Image src={Rangitikei} layout='fill' objectFit='cover' />
->>>>>>> a7226a164b6072c0bbc0863f264a344c77b8a36a
           </div>
           <div className='absolute inset-0 z-10 bg-black opacity-40' />
           <Navbar />
