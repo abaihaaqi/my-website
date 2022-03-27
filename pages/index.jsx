@@ -7,6 +7,7 @@ import innovative from '../public/illustration/innovative.svg'
 import InfoSection from '../components/InfoSection'
 import { getSortedPostsData } from '../lib/posts'
 import AllProjects from '../components/AllProjects'
+import MetaTags from '../components/Metatags'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -21,11 +22,7 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       {/* This is head for meta tags */}
-      <Head>
-        <title>Nizar Baihaqi</title>
-        {/* // TODO: SEO optimization */}
-        <link rel="icon" href="/icon/favicon.ico" />
-      </Head>
+      <MetaTags title="homepage" description="My website" />
       <article>
         {/* <Gallery title={'Design'} /> */}
         <section className='xl:grid grid-cols-3 gap-10 max-w-2xl xl:max-w-5xl mx-auto xl:my-32'>
