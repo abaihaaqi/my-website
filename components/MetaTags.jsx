@@ -1,8 +1,8 @@
 import Head from 'next/head'
 
 export default function MetaTags({ url = '', title, description, img }) {
-  const basePath = "https://nizarbaihaqi.com/"
-  const defaultImg = `/wave-portal.png`
+  const basePath = "https://staging.nizarbaihaqi.com/"
+  const defaultImg = `wave-portal.png`
 
   return (
     <Head>
@@ -25,14 +25,14 @@ export default function MetaTags({ url = '', title, description, img }) {
       {/* Google / Search Engine Tags */}
       <meta itemProp="name" content={title}/>
       <meta itemProp="description" content={description}/>
-      <meta itemProp="image" content={img || defaultImg}/>
+      <meta itemProp="image" content={`${basePath}${img || defaultImg}`}/>
 
       {/* Open Graph Meta Tags */}
       <meta property="og:title" content={title}/>
       <meta property="og:description" content={description}/>
       <meta property="og:type" content="website"/>
       <meta property="og:url" content={`${basePath}${url}`}/>
-      <meta property="og:image" content={img || defaultImg}/>
+      <meta property="og:image" content={`${basePath}${img || defaultImg}`}/>
       <meta property="og:image:width" content={1200}/>
       <meta property="og:image:height" content={1200}/>
       <meta property="og:site_name" content="Nizar Baihaqi"/>
