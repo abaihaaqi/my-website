@@ -4,9 +4,9 @@ import ActiveLink from "./ActiveLink";
 import { Factory, IdentificationCard, Newspaper, Palette } from "phosphor-react";
 import { navbarLink, active } from './Navbar.module.css'
 
-export default function Navbar() {
+export default function Navbar({ bg }) {
   return (
-    <nav className='mx-auto pr-2 lg:pr-0 flex justify-between items-center bg-accent lg:rounded-lg md:max-w-4xl absolute inset-x-0 z-30'>
+    <nav className={`mx-auto pr-2 lg:pr-0 flex justify-between items-center lg:rounded-lg md:max-w-4xl fixed inset-x-0 z-30 ${bg}`}>
       <Link href="/">
         <a className={navbarLink}>
           <Image src="/icon/favicon-32x32.png" width={32} height={32} alt="Logo Nizar Baihaqi" />
