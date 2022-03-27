@@ -30,7 +30,7 @@ export default function Banner({ content, home }) {
             <div className='bg-card py-3 px-4 xl:p-10 rounded-xl' >
               <div>
                 <h1 className='tracking-tighter italic font-bold pt-6 text-lg lg:text-2xl'>Building website</h1>
-                <h1 className='tracking-widest font-semibold text-lg'>doesn't have to be difficult</h1>
+                <h1 className='tracking-widest font-semibold text-lg'>{"doesn't have to be difficult"}</h1>
                 <div className='description flex items-center gap-2 mt-10'>
                   <figure className='relative h-[30px] w-[30px] rounded-full overflow-hidden'>
                     <Image src={Ijay} alt="Ijay potrait photo" layout='fill' objectFit='cover' />
