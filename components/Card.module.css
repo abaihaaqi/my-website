@@ -9,9 +9,9 @@
 }
 
 .text {
-  @apply bg-primary bg-opacity-0 rounded-xl hidden xl:block p-3 absolute -bottom-40 inset-x-2 z-10 transition-all
+  @apply bg-card bg-opacity-0 rounded-t-xl hidden xl:block p-3 absolute -bottom-40 inset-x-6 z-10 transition-all
 }
 
 .container:hover .text {
-  @apply bottom-2 bg-opacity-90
+  @apply bottom-0 bg-opacity-100
 }

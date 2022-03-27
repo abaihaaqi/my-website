@@ -35,7 +35,7 @@
   }
 
   a {
-    @apply text-link hover:underline
+    @apply text-link hover:underline active:underline
   }
 
   p {

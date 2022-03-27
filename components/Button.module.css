@@ -1,5 +1,5 @@
 .primary {
-  @apply flex items-center gap-1 max-h-8 bg-action-primary text-action-secondary rounded-md py-1 px-2 hover:transform hover:scale-110 transition-all;
+  @apply flex items-center gap-1 max-h-8 bg-action-primary text-action-secondary rounded-md py-1 px-2 hover:transform hover:scale-110 active:scale-90 focus:outline focus:outline-gray-600 transition-all;
 }
 
 .secondary {
