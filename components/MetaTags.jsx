@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 export default function MetaTags({ url = '', title, description, img }) {
   const basePath = "https://staging.nizarbaihaqi.com/"
-  const defaultImg = `wave-portal.png`
+  const defaultImg = `design/wave-portal.png`
 
   return (
     <Head>
@@ -42,9 +42,6 @@ export default function MetaTags({ url = '', title, description, img }) {
       <meta name="twitter:card" content="summary_large_image"/>
       <meta name="twitter:site" content="@abaihaaqi"/>
       <meta name="twitter:creator" content="@abaihaaqi"/>
-      <meta name="twitter:image" content={`${basePath}${img || defaultImg}`}/>
-      <meta name="twitter:image:width" content={1200}/>
-      <meta name="twitter:image:height" content={1200}/>
     </Head>
   )
 }
