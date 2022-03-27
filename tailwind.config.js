@@ -8,7 +8,7 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     fontFamily: {
-      'sans': ['Noto Sans', ...defaultTheme.fontFamily.sans],
+      'sans': ['Montserrat', ...defaultTheme.fontFamily.sans],
       'mono': ['Source Code Pro', ...defaultTheme.fontFamily.sans],
     },
     fontSize: {
@@ -23,9 +23,6 @@ module.exports = {
       center: true
     },
     extend: {
-      fontFamily: {
-        'heading': ['Montserrat', ...defaultTheme.fontFamily.sans]
-      },
       colors: {
         primary: '#AAFFFF',
         accent: '#C8FFFF',
