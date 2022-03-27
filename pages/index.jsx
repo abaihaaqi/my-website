@@ -7,7 +7,7 @@ import innovative from '../public/illustration/innovative.svg'
 import InfoSection from '../components/InfoSection'
 import { getSortedPostsData } from '../lib/posts'
 import AllProjects from '../components/AllProjects'
-import MetaTags from '../components/Metatags'
+import MetaTags from '../components/MetaTags'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
