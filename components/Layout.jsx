@@ -1,3 +1,4 @@
+import MetaTags from "../lib/MetaTags";
 import Banner from "./Banner";
 import Footer from "./Footer";
 import ScrollToTop from "./ScrollToTop";
@@ -5,6 +6,8 @@ import ScrollToTop from "./ScrollToTop";
 export default function Layout({ children, home, bannerContent, md }) {
   return (
     <>
+      {/* This is head for meta tags */}
+      <MetaTags />
       <ScrollToTop />
       <Banner home={home} content={bannerContent} />
       <main>
