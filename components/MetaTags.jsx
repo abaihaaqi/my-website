@@ -39,9 +39,9 @@ export default function MetaTags({ url = '', title, description, img }) {
       <meta property="og:locale" content={'en_US'}/>
 
       {/* Twitter Meta Tags */}
-      {/* <meta name="twitter:card" content="summary_large_image"/>
+      <meta name="twitter:card" content="summary_large_image"/>
       <meta name="twitter:site" content="@abaihaaqi"/>
-      <meta name="twitter:creator" content="@abaihaaqi"/> */}
+      <meta name="twitter:creator" content="@abaihaaqi"/>
     </Head>
   )
 }
