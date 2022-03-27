@@ -1,3 +1,7 @@
 .navbarLink {
-  @apply flex items-center gap-2 py-2 px-3 text-black hover:text-link hover:no-underline transition-all;
+  @apply flex items-center gap-2 py-2 px-3 text-black hover:text-action-primary hover:no-underline transition-all;
+}
+
+.active {
+  @apply bg-action-primary hover:bg-opacity-90 text-action-secondary hover:text-action-secondary rounded-b-lg
 }
