@@ -6,7 +6,7 @@ import { navbarLink, active } from './Navbar.module.css'
 
 export default function Navbar({ bg }) {
   return (
-    <nav className={`mx-auto pr-2 lg:pr-0 flex justify-between items-center lg:rounded-lg md:max-w-4xl fixed inset-x-0 z-30 ${bg}`}>
+    <nav className="bg-accent mx-auto pr-2 lg:pr-0 flex justify-between items-center lg:rounded-lg md:max-w-4xl absolute inset-x-0 z-30">
       <Link href="/">
         <a className={navbarLink}>
           <Image src="/icon/favicon-32x32.png" width={32} height={32} alt="Logo Nizar Baihaqi" />

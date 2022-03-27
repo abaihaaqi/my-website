@@ -23,7 +23,7 @@ export default function Banner({ content, home }) {
         <div className='h-screen relative lg:pt-3 xl:pt-7'>
           <Image src={Rangitikei} layout='fill' objectFit='cover' alt='' />
           <div className='absolute inset-0 z-10 bg-black opacity-40' />
-          <Navbar bg={'bg-accent'} />
+          <Navbar />
           <div className='absolute inset-0 z-20 flex flex-col justify-center max-w-3xl mx-auto px-3 xl:px-0'>
             <div className='bg-card py-3 px-6 rounded-xl' >
               <div>
