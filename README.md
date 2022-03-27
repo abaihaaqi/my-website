@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nizar Baihaqi
 
-## Getting Started
+> This is my personal website. To show my projects and write blogs there.
 
-First, run the development server:
+# Brainstorm
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+I want to create my online presence more professional and blogging there. I need a homepage, works page that have design and projects page, about me page and case study page. I want to use markdown to create the content.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Feature
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- Have ability to show my design, projects and about myself
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+> 💡 This mean you don’t have to create a stunning website with a lot of svg and everything else. Just simple website that can show images text and parsing markdown.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# Milestone
 
-## Learn More
+1. Create prototype with Figma
+- Create components
+- Create mobile design layouts
+- Create desktop design layouts
+2. Coding
+- Create components that rendered in all pages
+- Create design page then create all the atom component there
+- Create pages
+- Dynamic project page
+- Create cypress testing
+3. Publish
+- Deploy to vercel
+- Populate with real contents
 
-To learn more about Next.js, take a look at the following resources:
+> ### Font : Montserrat
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> ### Color : #C8FFFF
