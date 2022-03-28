@@ -6,7 +6,7 @@ export const metaContent = {
   url: "/design",
   title: "My Design",
   description: "Collection of my beautiful design.",
-  img: "/share/my-design.svg"
+  img: "/share/my-design.png"
 }
 
 const bannerContent = (

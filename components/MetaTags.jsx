@@ -7,7 +7,7 @@ export default function MetaTags({ url, title, description, img }) {
   const defaultOpt = {
     defaultTitle: "Nizar Baihaqi",
     defaultDesc: "Being a Frontend developer is being a fulltime learner, sometime design website, sometime creating website and sometime learning new Javascript framework.",
-    defaultImg: "/share/default.svg",
+    defaultImg: "/share/default.png",
   }
 
   const option = {
