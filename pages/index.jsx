@@ -27,21 +27,21 @@ export default function Home({ allPostsData }) {
           <InfoSection image={speedTest}>
             <h2 className='tracking-tighter italic font-light'>Fast</h2>
             <p>
-              Lorem ipsum dolor sit amet.
+              I'm using Nextjs which have known the performance
             </p>
           </InfoSection>
 
           <InfoSection image={websiteBuilder}>
             <h2 className='tracking-widest font-light'>Flexible</h2>
             <p>
-              Lorem, ipsum dolor.
+              Build anything you like, from a landing page to new e-commerce
             </p>
           </InfoSection>
 
           <InfoSection image={innovative}>
-            <h2 className='tracking-widest font-light'>Colorful</h2>
+            <h2 className='tracking-widest font-light'>Awesome Design</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Imagination is the limit.
             </p>
           </InfoSection>
 
