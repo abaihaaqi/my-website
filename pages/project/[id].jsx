@@ -28,7 +28,7 @@ export default function PublishedProject({ postData }) {
     url: postData.id,
     title: postData.title,
     description: postData.desc,
-    img: postData.img
+    img: postData.img || '/my-projects.png'
   }
 
   const bannerContent = (
