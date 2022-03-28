@@ -11,7 +11,7 @@ export default function Banner({ content, home }) {
   return (
     <header>
       {content && (
-        <div className='relative h-[50vh]'>
+        <div className='relative h-[70vh]'>
           <Navbar />
           <div className='flex flex-col h-full justify-center items-center text-center absolute inset-x-0 z-10'>
             {content}
