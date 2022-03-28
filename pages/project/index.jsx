@@ -16,7 +16,7 @@ const metaContent = {
   url: "/project",
   title: "My Projects",
   description: "This is my projects gallery. You can see my project here. Or find inspiration for your next project.",
-  img: "/share/project-page.png",
+  img: "/share/my-projects.png",
 }
 
 const bannerContent = (
