@@ -1,4 +1,4 @@
-import MetaTags from "../lib/MetaTags";
+import MetaTags from "./MetaTags";
 import Banner from "./Banner";
 import Footer from "./Footer";
 import ScrollToTop from "./ScrollToTop";
