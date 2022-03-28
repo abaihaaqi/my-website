@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 export default function MetaTags({ url, title, description, img }) {
   
-  const basePath = "https://staging.nizarbaihaqi.com"
+  const basePath = "https://nizarbaihaqi.com"
 
   const defaultOpt = {
     defaultTitle: "Nizar Baihaqi",
