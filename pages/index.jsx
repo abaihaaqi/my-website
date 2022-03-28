@@ -1,12 +1,12 @@
-import Head from 'next/head'
-// import Gallery from '../components/Gallery'
+import { getSortedPostsData } from '../lib/posts'
 import Layout from '../components/Layout'
+// import Gallery from '../components/Gallery'
+import InfoSection from '../components/InfoSection'
+import AllProjects from '../components/AllProjects'
+
 import speedTest from '../public/illustration/speed-test.svg'
 import websiteBuilder from '../public/illustration/website-builder.svg'
 import innovative from '../public/illustration/innovative.svg'
-import InfoSection from '../components/InfoSection'
-import { getSortedPostsData } from '../lib/posts'
-import AllProjects from '../components/AllProjects'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()

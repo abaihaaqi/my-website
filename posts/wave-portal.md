@@ -1,6 +1,7 @@
 ---
 title: 'Wave portal'
 desc: 'A simple wave portal app for everyone'
+img: '/wave-portal.png'
 date: '2020-01-01'
 author: 'Nizar Baihaqi'
 ---

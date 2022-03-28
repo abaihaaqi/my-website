@@ -2,6 +2,13 @@ import Layout from '../components/Layout'
 import Banner from '../components/Banner'
 import Gallery from '../components/Gallery'
 
+export const metaContent = {
+  url: "/design",
+  title: "My Design",
+  description: "Collection of my beautiful design.",
+  img: "/share/design-page.png"
+}
+
 const bannerContent = (
   <>
     <h1 className="tracking-widest font-extralight text-center">Gallery</h1>
@@ -11,7 +18,7 @@ const bannerContent = (
 
 export default function Design() {
   return (
-    <Layout bannerContent={bannerContent}>
+    <Layout bannerContent={bannerContent} metaContent={metaContent}>
       {/* // TODO: Head tag and SEO */}
       <article className='mb-2'>
         <Gallery />

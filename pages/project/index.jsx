@@ -12,6 +12,13 @@ export async function getStaticProps() {
   }
 }
 
+const metaContent = {
+  url: "/project",
+  title: "My Projects",
+  description: "This is my projects gallery. You can see my project here. Or find inspiration for your next project.",
+  img: "/share/project-page.png",
+}
+
 const bannerContent = (
   <>
   {/* // TODO: Layouting project page and create dynamic page using markdown */}
@@ -33,7 +40,7 @@ const bannerContent = (
 
 export default function Projects({ allPostsData }) {
   return (
-    <Layout bannerContent={bannerContent} project>
+    <Layout bannerContent={bannerContent} metaContent={metaContent} project>
       <AllProjects data={allPostsData} />
     </Layout>
   )

@@ -3,11 +3,11 @@ import Banner from "./Banner";
 import Footer from "./Footer";
 import ScrollToTop from "./ScrollToTop";
 
-export default function Layout({ children, home, bannerContent, md }) {
+export default function Layout({ children, home, bannerContent, metaContent, md }) {
   return (
     <>
       {/* This is head for meta tags */}
-      <MetaTags />
+      <MetaTags {...metaContent} />
       <ScrollToTop />
       <Banner home={home} content={bannerContent} />
       <main>
