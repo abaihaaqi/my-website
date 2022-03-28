@@ -24,6 +24,13 @@ export async function getStaticPaths() {
 export default function PublishedProject({ postData }) {
   const router = useRouter()
 
+  const metaContent = {
+    url: postData.id,
+    title: postData.title,
+    description: postData.desc,
+    img: postData.img
+  }
+
   const bannerContent = (
     <>
       <h1>{postData.title}</h1>
@@ -35,7 +42,7 @@ export default function PublishedProject({ postData }) {
   )
 
   return (
-    <Layout bannerContent={bannerContent} md>
+    <Layout bannerContent={bannerContent} metaContent={metaContent} md>
       <div className='flex items-center gap-1'>
         <p>{postData.author} @</p>
         <Date dateString={postData.date} />

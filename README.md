@@ -26,6 +26,7 @@ I want to create my online presence more professional and blogging there. I need
 - Create cypress testing
 3. Publish
 - Deploy to vercel
+- SEO optimization
 - Populate with real contents
 
 > ### Font : Montserrat

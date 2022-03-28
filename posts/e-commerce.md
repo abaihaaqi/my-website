@@ -1,8 +1,7 @@
 ---
-title: 'Wave portal'
-desc: 'A simple wave portal app for everyone'
-img: '/wave-portal.png'
-date: '2020-01-01'
+title: 'E-commerce'
+desc: 'A simple e-commerce for everyone'
+date: '2020-07-09'
 author: 'Nizar Baihaqi'
 ---
 

@@ -11,5 +11,11 @@ module.exports = withMDX({
   images: {
     domains: ['via.placeholder.com']
   },
-  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx']
+  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      require("./lib/sitemap-generator");
+    }
+    return config
+  }
 })

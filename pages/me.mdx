@@ -1,6 +1,13 @@
 import Layout from '../components/Layout'
 import Placeholder from '../components/Placeholder'
 
+export const metaContent = {
+  url: "/me",
+  title: "About Me",
+  description: "If you want to know more about me you can read this article here.",
+  img: "/share/about-me-page.png"
+}
+
 export const bannerContent = (
   <>
     <h1>Aku</h1>
@@ -36,4 +43,4 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus possimus a ea
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt modi hic ea quos assumenda officia, aspernatur mollitia corporis unde earum voluptas voluptatibus minima ducimus sequi ab blanditiis aliquam quisquam tempora.
 
-export default ({ children }) => <Layout md bannerContent={bannerContent}>{children}</Layout>
+export default ({ children }) => <Layout md bannerContent={bannerContent} metaContent={metaContent}>{children}</Layout>

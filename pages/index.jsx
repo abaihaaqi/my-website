@@ -1,12 +1,12 @@
-import Head from 'next/head'
-// import Gallery from '../components/Gallery'
+import { getSortedPostsData } from '../lib/posts'
 import Layout from '../components/Layout'
+// import Gallery from '../components/Gallery'
+import InfoSection from '../components/InfoSection'
+import AllProjects from '../components/AllProjects'
+
 import speedTest from '../public/illustration/speed-test.svg'
 import websiteBuilder from '../public/illustration/website-builder.svg'
 import innovative from '../public/illustration/innovative.svg'
-import InfoSection from '../components/InfoSection'
-import { getSortedPostsData } from '../lib/posts'
-import AllProjects from '../components/AllProjects'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -20,12 +20,6 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
-      {/* This is head for meta tags */}
-      <Head>
-        <title>Nizar Baihaqi</title>
-        {/* // TODO: SEO optimization */}
-        <link rel="icon" href="/icon/favicon.ico" />
-      </Head>
       <article>
         {/* <Gallery title={'Design'} /> */}
         <section className='xl:grid grid-cols-3 gap-10 max-w-2xl xl:max-w-5xl mx-auto xl:my-32'>
