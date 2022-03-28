@@ -4,7 +4,6 @@ import { useRouter } from 'next/router';
 import Button from './Button';
 import Navbar from './Navbar';
 import Rangitikei from '../public/bg/Rangitikei.svg'
-import Ijay from '../public/img/ijay.jpg'
 
 export default function Banner({ content, home }) {
   const router = useRouter()
@@ -29,16 +28,11 @@ export default function Banner({ content, home }) {
               <div>
                 <h1 className='tracking-tighter italic font-bold pt-6 text-lg md:text-2xl'>Building website</h1>
                 <h1 className='tracking-widest font-semibold text-lg'>{"doesn't have to be difficult"}</h1>
-                <div className='description flex items-center gap-2 mt-10'>
-                  <figure className='relative h-[30px] w-[30px] rounded-full overflow-hidden'>
-                    <Image src={Ijay} alt="Ijay potrait photo" layout='fill' objectFit='cover' />
-                  </figure>
-                  <Link href='/me'>
-                    <a className='text-black'>Nizar Baihaqi</a>
-                  </Link>
-                </div>
               </div>
-              <div className='mt-10 flex justify-end gap-2'>
+              <div className='mt-10 flex justify-end items-center gap-2'>
+                <Link href='/me'>
+                  <a className='description text-black'>Nizar Baihaqi 👋</a>
+                </Link>
                 {/* <Button click={() => router.push('/design')}>
                   Design
                 </Button> */}
