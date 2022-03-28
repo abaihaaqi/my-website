@@ -3,13 +3,14 @@ import Link from "next/link";
 import ActiveLink from "./ActiveLink";
 import { Factory, IdentificationCard, Newspaper, Palette } from "phosphor-react";
 import { navbarLink, active } from './Navbar.module.css'
+import logoIjay from '../public/logo-ijay.svg'
 
 export default function Navbar({ bg }) {
   return (
     <nav className="bg-accent mx-auto pr-2 lg:pr-0 flex justify-between items-center lg:rounded-lg md:max-w-4xl absolute inset-x-0 z-30">
       <Link href="/">
         <a className={navbarLink}>
-          <Image src="/favicon-32x32.png" width={32} height={32} alt="Logo Nizar Baihaqi" />
+          <Image src={logoIjay} width={32} height={32} alt="Logo Nizar Baihaqi" />
           <span className="hidden sm:inline">
             Nizar Baihaqi
           </span>
