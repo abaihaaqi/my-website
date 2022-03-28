@@ -27,7 +27,7 @@ export default function Home({ allPostsData }) {
           <InfoSection image={speedTest}>
             <h2 className='tracking-tighter italic font-light'>Fast</h2>
             <p>
-              I'm using Nextjs which have known the performance
+              {"I'm using Nextjs which have known the performance"}
             </p>
           </InfoSection>
 
