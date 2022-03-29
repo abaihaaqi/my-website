@@ -18,7 +18,7 @@
   h6,
   b,
   em {
-    @apply font-bold
+    @apply font-bold my-3
   }
 
   h1 {
@@ -43,7 +43,7 @@
   }
 
   blockquote {
-    @apply card bg-action-secondary border-l-8 border-action-primary
+    @apply card bg-accent border-l-8 border-action-primary
   }
 
   ul {

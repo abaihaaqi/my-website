@@ -15,8 +15,47 @@ export const bannerContent = (
   </>
 )
 
-# Case Study
+# Blog Page
 
-Ijay is still writing...
+Let's say that Asep needs website for blogging. Asep want to write his blog and share it to their friends. Asep is a photographer too. So Asep wants in his website, there's a gallery for his photo work.
+
+### Do Asep have web design prototype provided?
+
+> Sometime for me, it is easier to customer have some design provided. So that i can straight into coding. But if Asep don't have a web design, i must create one for Asep because changing design in coding phase is not very effective.
+
+Asep says that he doesn't know what is that. So i explain to him that was the blueprint of a website. Make development more easier and following same design pattern.
+
+### What kind of service that fit in Asep case?
+
+- Headless CMS
+
+As i can see, for now Asep doesn't need backend integration this time. But asep needs CMS (Content Management System) integration like Wordpress or Wix for his website. Wordpress only provide the content and the interface or Front-end of the website using full build from scratch.
+
+*Other option :*
+
+- Markdown
+
+Other option is using markdown for writing the content. It doesn't uses any CMS. the file is directly in the website. So it is bundled inside the website.
+
+> This needs markdown writing skill and some knowledge how to publish to github or other git provider. Or i can build the website included with markdown editor. Like creating custom CMS. So that Asep can write content directly in the website.
+
+# Milestone
+
+1. Create prototype with Figma
+- Create components
+- Create mobile design layouts
+- Create desktop design layouts
+- Get feedback from Asep
+2. Coding
+- Create layouts that rendered in all pages
+- Create pages
+- Create dynamic page (For showing particular blog)
+- Create cypress testing (Optional)
+3. Publish
+- Deploy to vercel or else (Like Netlify or Heroku)
+- SEO optimization
+- Asep can start writing and posting
+
+That's it, This is kinda roadmap of how i create website and optimize it for customer needs. Hope you find this useful and don't forget to contact me if you want build one too.
 
 export default ({ children }) => <Layout md bannerContent={bannerContent} metaContent={metaContent}>{children}</Layout>

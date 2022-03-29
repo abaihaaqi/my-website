@@ -1,8 +1,9 @@
 import Image from 'next/image'
 import Layout from '../components/Layout'
 import Button from '../components/Button'
-import Placeholder from '../components/Placeholder'
-import logoBnsp from '../public/logo/bnsp.png'
+import TechStack from '../components/TechStack'
+import LogoBnsp from '../public/logo/bnsp.png'
+import Ijay from '../public/ijay.jpg'
 
 export const metaContent = {
   url: "/me",
@@ -13,34 +14,33 @@ export const metaContent = {
 
 export const bannerContent = (
   <>
-    <h1>Aku</h1>
-    <p>'Me' in <a href="https://en.wikipedia.org/wiki/Indonesian_language" target="_blank" rel="noopener noreferrer">Bahasa Indonesia</a></p>
+    <Image src={Ijay} alt='a photo of Nizar Baihaqi' width={150} height={150} />
+    <h1 className='mt-6'>Nizar Baihaqi</h1>
+    <p>I'm a Front-end web developer</p>
   </> 
 )
 
-Hi, Thanks for coming to my website here. Let me introduce myself.
+## Me
 
-My name is Nizar Baihaqi and i'm a Fullstack Developer. I have created several projects with Reactjs, Vuejs and Laravel. Maybe you can call it a Fullstack but now i'm focusing on Front-end section. Trying to improve my skill with Reactjs and Tailwindcss.
+My name is Nizar Baihaqi and i'm a Front-end Web Developer. I have created several projects with Reactjs, Vuejs. I'm also creating website wireframe like UI/UX designer do.
 
-I have my journey blog here. I can say that i'm a web3 developer (drop a gm here if you interested). I have cover up things like connecting wallet and creating my own smart contract. 
+As a Front-end i can build websites with responsive design, SEO optimization, communicating with API, and integrate web app to BaaS (Backend as a service) like Firebase or Supabase (Firebase alternative).
 
-As a Front-end i can design wireframe for mobile and desktop devices too. Communicating with API. Integrate web app to BaaS (Backend as a service) like Firebase or Supabase (firebase alternative). 
+I have my journey blog [here](https://blog.nizarbaihaqi.com). I can say that i'm a web3 developer too (drop a gm [here](https://nqrz-wave-portal.herokuapp.com) if you interested). I know how to connect wallet and create my own smart contract. 
 
-As a Backend too, i have been creating dashboard with Laravel and MySQL. Relational database makes me crazy, but i figure it out. I'm never learn further as professional Backend.
+## My Tech Stack
 
-The point is.. That i can learn anything, sometime fast, sometime needs more time. But as long as new javascript framework isn't stop popping out. We're never gets enough to learn.
+<TechStack />
 
 ## My Certification
 
-<div className='flex items-center gap-10'>
-  <div className='relative'>
-    <Image src={logoBnsp} alt="BNSP Logo" height={100} width={200} Layout='fill' objectFit='cover' />
-  </div>
+<div className='flex items-center gap-10 my-3'>
+  <Image src={LogoBnsp} alt="BNSP Logo" height={150} width={150} />
   <div className='w-full flex justify-between items-center'>
     <p className='font-bold'>Junior Web Developer</p>
     <a className='hover:no-underline' href="http://localhost:3000/file/cert.pdf" target="_blank" rel="noopener noreferrer">
       <Button>
-        See PDF
+        PDF
       </Button>
     </a>
   </div>
@@ -48,6 +48,6 @@ The point is.. That i can learn anything, sometime fast, sometime needs more tim
 
 Certified by **BNSP** (Badan Nasional Sertifikasi Profesi) *Indonesian professional certification authority*
 
-That's all i can explain for now, Any further information you can email me or DM me at my social media.
+That's all i can explain for now. Any further information you can [email me](mailto:nizarbaihaq@gmail.com) or [DM me](https://linkedin.com/in/nizar-baihaqi) at my social media.
 
 export default ({ children }) => <Layout md bannerContent={bannerContent} metaContent={metaContent}>{children}</Layout>
